@@ -1,0 +1,67 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /root/.jenkins/workspace/test
+Cloning the remote Git repository
+Cloning repository https://github.com/Tim11071992/hello.git
+ > git init /root/.jenkins/workspace/test # timeout=10
+Fetching upstream changes from https://github.com/Tim11071992/hello.git
+ > git --version # timeout=10
+using .gitcredentials to set credentials
+ > git config --local credential.username tim11071992 # timeout=10
+ > git config --local credential.helper store --file=/usr/local/tomcat/temp/git1010296955849040858.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/Tim11071992/hello.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git config remote.origin.url https://github.com/Tim11071992/hello.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Tim11071992/hello.git # timeout=10
+Fetching upstream changes from https://github.com/Tim11071992/hello.git
+using .gitcredentials to set credentials
+ > git config --local credential.username tim11071992 # timeout=10
+ > git config --local credential.helper store --file=/usr/local/tomcat/temp/git6379453644186192161.credentials # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/Tim11071992/hello.git +refs/heads/*:refs/remotes/origin/*
+ > git config --local --remove-section credential # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f73652bb50cfd14913331b470188953dff8a6f6f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f73652bb50cfd14913331b470188953dff8a6f6f
+First time build. Skipping changelog.
+[Gradle] - Launching build.
+[test] $ gradle
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpC7zV766aHPULSYGhooiBimoluT8vOJ8oFpnCA1SyAABjCCFBQDX67qaYgAAAA==[0m:help
+
+Welcome to Gradle 2.3.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL
+
+Total time: 20.724 secs
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[test] $ /bin/sh -xe /usr/local/tomcat/temp/hudson4944830680434833433.sh
++ gradle build
+:compileJava
+Download https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
+Download https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+:processResources UP-TO-DATE
+:classes
+:war
+Download https://repo1.maven.org/maven2/javax/servlet/jstl/1.1.2/jstl-1.1.2.pom
+Download https://repo1.maven.org/maven2/javax/servlet/jstl/1.1.2/jstl-1.1.2.jar
+:assemble
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:check UP-TO-DATE
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 22.778 secs
+Finished: SUCCESS
